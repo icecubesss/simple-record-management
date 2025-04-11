@@ -1,26 +1,7 @@
 import { ref } from "vue";
 
 export default function useRecords() {
-  const records = ref([
-    {
-      id: 1,
-      title: "First Record",
-      description: "This is the first sample record",
-      date: "2023-05-15",
-    },
-    {
-      id: 2,
-      title: "Second Record",
-      description: "Another example record for demonstration",
-      date: "2023-05-16",
-    },
-    {
-      id: 3,
-      title: "Third Record",
-      description: "Yet another record in the system",
-      date: "2023-05-17",
-    },
-  ]);
+  const records = ref([]);
 
   const addRecord = (record) => {
     const newRecord = {
